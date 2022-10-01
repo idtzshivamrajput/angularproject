@@ -12,6 +12,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { DetailsComponent } from './details/details.component';
+import { AdminModule } from './admin/admin.module';
+
 
 @NgModule({
   declarations: [
@@ -26,10 +28,13 @@ import { DetailsComponent } from './details/details.component';
     BlogComponent,
     DetailsComponent
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AdminModule,
+    AppRoutingModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

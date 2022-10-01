@@ -11,32 +11,33 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 const routes: Routes = [
 
   {
-    path:"",
-    component:HomeComponent
+    path: "",
+    component: HomeComponent
   },
   {
-    path:"about",
-    component:AboutComponent
+    path: "about",
+    component: AboutComponent
+  },
+
+  {
+    path: "contact",
+    component: ContactComponent
   },
   {
-    path:"contact",
-    component:ContactComponent
+    path: "details/:id",
+    component: DetailsComponent
   },
   {
-    path:"details",
-    component:DetailsComponent
+    path: "blog",
+    component: BlogComponent
   },
   {
-    path:"blog",
-    component:BlogComponent
+    path: "login",
+    component: LoginComponent
   },
   {
-    path:"login",
-    component:LoginComponent
-  },
-  {
-    path:"**",
-    component:PagenotfoundComponent
+    path: "**",
+    component: PagenotfoundComponent
   }
 
 ];
