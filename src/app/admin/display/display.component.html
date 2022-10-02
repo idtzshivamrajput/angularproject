@@ -1,1 +1,48 @@
-<p>display works!</p>
+<section class="dashboard-wrap mtb-40">
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <app-sidebar></app-sidebar>
+                </div>
+                <div class="col-md-9">
+                    <div class="dash-right">
+                        <div class="dash-header">
+                            <div class="dash-title">
+                                <h1>Blogs</h1>
+                            </div>
+                            <div class="dash-nav">
+                                <a [routerLink]="['/admin-createblog']" class="btn btn-success">Add Post</a>
+                            </div>
+                        </div>
+                        <table class="table  table-hover  ">
+                            <thead>
+                                <tr>
+                                    <th class="a">id</th>
+                                    <th class="a">title</th>
+                                    <th class="a">body</th>
+                                    <th class="a">description</th>
+                                    <th class="a">image</th>
+                                    <th class="a">action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor= "let get of data">
+                                    <td>{{get.id}}</td>
+                                    <td>{{get.title}}</td>
+                                    <td>{{get.body}}</td>
+                                    <td>{{get.description}}</td>
+                                    <td>{{get.image}}</td>
+                                    <td><a><i class="fa-solid fa-eye" style="color: deepskyblue;"></i></a>&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;
+                                        <a><i class="fa-solid fa-pen-to-square" style="color: green;"></i></a>&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;
+                                        <a><i class="fa-sharp fa-solid fa-trash" style="color: red;"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

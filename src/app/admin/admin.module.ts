@@ -10,6 +10,8 @@ import { EditblogComponent } from './editblog/editblog.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ViewComponent } from './view/view.component';
 import { CreatecategoryComponent } from './createcategory/createcategory.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { CreatecategoryComponent } from './createcategory/createcategory.compone
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AdminRoutingModule,
 
   ],
