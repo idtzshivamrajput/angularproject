@@ -36,6 +36,11 @@ import { ReactiveFormsModule } from '@angular/forms';
   exports:[
     DashbordComponent,
     DisplayComponent,
+    DisplaycategoryComponent,
+    CreateblogComponent,
+    CreatecategoryComponent,
+    SidebarComponent,
+    ViewComponent,
     EditblogComponent,
   ]
 })

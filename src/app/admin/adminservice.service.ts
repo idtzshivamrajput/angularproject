@@ -12,5 +12,11 @@ export class AdminserviceService {
   getdata(){
     return this.http.get(this.url+'blogs')
   }
+  adddata(add_data_var:any){
+    return this.http.get(this.url+'blogs',add_data_var)
+  }
+  view_blog(id:any){
+    return this.http.get(this.url+'blogs/'+id)
+  }
 
 }
