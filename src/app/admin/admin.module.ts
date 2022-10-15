@@ -12,19 +12,28 @@ import { ViewComponent } from './view/view.component';
 import { CreatecategoryComponent } from './createcategory/createcategory.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { CategorydisplayComponent } from './categorydisplay/categorydisplay.component';
+import { ContactdisplayComponent } from './contactdisplay/contactdisplay.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { RegistrationdisplayComponent } from './registrationdisplay/registrationdisplay.component';
 
 
 @NgModule({
   declarations: [
     CreateblogComponent,
-    
     DashbordComponent,
     DisplayComponent,
     DisplaycategoryComponent,
     EditblogComponent,
     SidebarComponent,
     ViewComponent,
-    CreatecategoryComponent
+    CreatecategoryComponent,
+    AboutusComponent,
+    CategorydisplayComponent,
+    ContactdisplayComponent,
+    RegistrationComponent,
+    RegistrationdisplayComponent
   ],
   imports: [
     CommonModule,
@@ -41,6 +50,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     CreatecategoryComponent,
     SidebarComponent,
     ViewComponent,
+    ContactdisplayComponent,
+    CategorydisplayComponent,
+    RegistrationComponent,
     EditblogComponent,
   ]
 })
